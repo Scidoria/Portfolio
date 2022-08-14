@@ -1,0 +1,121 @@
+<!doctype html>
+<html> 
+ <head><style type="text/css" id="dcoder_stylesheet">.bestxi{
+  border: 4px solid #009a17;
+  padding: 40px;
+  background-color: lawngreen;
+}
+.forward{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 80px;
+}
+.midfield{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 80px;
+}
+.defend{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 80px;
+}
+.keeper{
+  display: flex;
+  justify-content: space-around;
+}
+.red{
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
+.blue{
+  background-color: blue;
+}
+.yellow{
+  background-color: yellow;
+}
+button{
+  font-size: 40px;
+}
+p{
+  font-size: 40px;
+  text-align:center;
+}
+input{
+  height: 40px;
+  width:60%;
+  font-size: 40px;
+}
+.change{
+  color: gray;
+  background-color: skyblue;
+}</style></head> 
+ <body> 
+  <h1> THE BEST SIDE </h1> <button class="change" onclick="changeLineup()">change lineup</button> <button class="change" onclick="changeBack()">Change Back</button> 
+  <div class="bestxi"> 
+   <div class="forward"> <button id="diaz" onclick="Diaz()" class="red">L.Diaz </button> <button id="nunez" onclick="Nunez()" class="red">D.Nunez </button> <button id="salah" onclick="Salah()" class="red">M.Salah </button> 
+   </div> 
+   <div class="midfield"> <button id="carvalho" onclick="Carvalho()" class="green">F.Carvalho </button> <button id="fabinho" onclick="Fabinho()" class="green">Fabinho </button> <button id="keita" onclick="Keita()" class="green">N.Keita </button> 
+   </div> 
+   <div class="defend"> <button id="robertson" onclick="Roberson" class="blue">A.Robertson </button> <button id="vandijk" onclick="Vandijk()" class="blue">V.Vandijk </button> <button id="konate" onclick="Konate()" class="blue">I.Konate </button> <button id="taa" onclick="TAA()" class="blue">T.A.Arnold </button> 
+   </div> 
+   <div class="keeper"> <button id="allison" onclick="Alisson()" class="yellow">Allison </button> 
+   </div> 
+  </div> 
+  <p>Who is the highest paid player in LFC :<br> <input type="text" placeholder="write here"></p> 
+  <br><button onclick="check()">Submit</button> 
+ 
+<script type="text/javascript" id="dcoder_script">function changeLineup(){
+  const diaz = document.getElementById("diaz");
+  diaz.innerHTML = "Carvalho";
+  const nunez = document.getElementById("nunez");
+  nunez.innerHTML = "Jota";
+  const salah = document.getElementById("salah");
+  salah.innerHTML = "Salah";
+  const carvalho = document.getElementById("carvalho");
+  carvalho.innerHTML = "Thiago";
+   const fabinho = document.getElementById("fabinho");
+  fabinho.innerHTML = "fabinho";
+  const keita = document.getElementById("keita");
+  keita.innerHTML = "Elliot";
+  const robertson = document.getElementById("robertson");
+  robertson.innerHTML = "Tsimikes";
+  const vandijk = document.getElementById("vandijk");
+  vandijk.innerHTML = "Konate";
+  const konate = document.getElementById("konate");
+  konate.innerHTML = "Matip" ;
+  const taa = document.getElementById("taa");
+  taa.innerHTML = "Milner";
+  const allison = document.getElementById("allison");
+  allison.innerHTML ="Adrian";
+}
+function Nunez(){
+  const nunez = document.getElementById("nunez");
+  nunez.innerHTML = "Firmino";
+}
+function changeBack(){
+  const diaz = document.getElementById("diaz");
+  diaz.innerHTML = "Diaz";
+  const nunez = document.getElementById("nunez");
+  nunez.innerHTML = "Nunez";
+  const salah = document.getElementById("salah");
+  salah.innerHTML = "Salah";
+  const carvalho = document.getElementById("carvalho");
+  carvalho.innerHTML = "Carvalho";
+   const fabinho = document.getElementById("fabinho");
+  fabinho.innerHTML = "fabinho";
+  const keita = document.getElementById("keita");
+  keita.innerHTML = "Keita";
+  const robertson = document.getElementById("robertson");
+  robertson.innerHTML = "Robertson";
+  const vandijk = document.getElementById("vandijk");
+  vandijk.innerHTML = "Vandijk";
+  const konate = document.getElementById("konate");
+  konate.innerHTML = "Konate" ;
+  const taa = document.getElementById("taa");
+  taa.innerHTML = "TAA";
+  const allison = document.getElementById("allison");
+  allison.innerHTML ="Allison";
+}</script></body></html>
